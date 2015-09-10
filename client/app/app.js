@@ -8,4 +8,7 @@ appModule.config(function ($routeProvider) {
 		.when('/general', {
 			templateUrl: './views/general.html'
 		})
+		.when('/search', {
+			templateUrl: './views/search.html'
+		})
 })

@@ -1,0 +1,178 @@
+	
+	<div class="container"> <!-- Start page content -->
+<!-- include:page_header : NOT necessary in Advanced search page -->
+<div class="row">
+		<div class="col-md-12 hidden-xs">
+		<ol class="breadcrumb"><li><a href="#/" title="Forum Home">Forum Home</a></li><li class="active">Advanced Search</li></ol>
+		</div>		
+	</div>
+<form method="post" action="http://www.eebootstrap.com/forum/do_search/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="board_id" value="1" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="e953e92694ac1771257c7535d9897f74e1ee5226" />
+</div>
+
+
+	<div class="form-group">
+	<h4>Advanced Search</h4>
+	<div class="clearfix">&nbsp;</div>
+	
+	<div class="row">
+	
+		<div class="col-md-6 col-sm-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				 <h5 class="panel-title">Search by Keyword</h5>
+				</div>
+				<div class="panel-body">
+					<fieldset>				
+						<input type="text" class="form-control" name="keywords" placeholder="keyword" required />
+			
+						<div class="clearfix">&nbsp;</div>
+			
+						<select name="search_in" class="form-control">
+							<option value="titles">Search in Titles</option>
+							<option value="posts" >Search in Posts</option>
+							<option value="all"  selected="selected">Search in Titles and Posts</option>
+						</select>
+			
+						<div class="clearfix">&nbsp;</div>
+			
+						<select name="search_criteria" class="form-control">
+							<option value="any">Search for Any Word</option>
+							<option value="all"  selected="selected">Search for All Words</option>
+							<option value="exact">Exact Match</option>
+						</select>
+					</fieldset>
+				</div>	
+			</div>		
+		</div>
+		
+		<div class="col-md-6 col-sm-6">	
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				 <h5 class="panel-title">Search In Forums</h5>
+				</div>
+				<div class="panel-body">
+					<fieldset>
+						<select name="forum_id[]" class="form-control" multiple="multiple">
+							<option value='all' selected='selected'>Search in all forums</option>
+<option value='2'>&nbsp;- Announcements</option>
+<option value='3'>&nbsp;- Pre-Sales Questions</option>
+<option value='7'>&nbsp;- Bug Reports</option>
+<option value='9'>&nbsp;- Installation and Upgrade Support</option>
+<option value='11'>&nbsp;- Tips & Tricks</option>
+<option value='10'>&nbsp;- Test Messages</option>
+<option value='4'>General</option>
+<option value='5'>&nbsp;- eeBootstrap Showcase</option>
+<option value='6'>&nbsp;- Chit Chat</option>
+
+						</select>
+					</fieldset>
+				</div>	
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="clearfix">&nbsp;</div>
+	
+	<div class="row">
+	
+		<div class="col-md-12">
+		
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div id="titleSearchMemberName">
+						<h5 class="panel-title">Search by Member Name<span></span></h5>
+					</div>
+				</div>
+				<div class="panel-body">
+					<fieldset id="byMemberName">
+						<input type="text" class="form-control" name="member_name" placeholder="Member Name:"/>
+
+						<div class="clearfix">&nbsp;</div>
+			
+						<label class="checkbox-inline">
+							<input type="checkbox" name="exact_match" value="y" /> Exact Name Match
+						</label>
+					</fieldset>
+				</div>	
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="clearfix">&nbsp;</div>
+
+	<div class="row">
+	
+		<div class="col-md-6 col-sm-6">
+		
+		
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h5 class="panel-title">Search Posts From</h5>
+				</div>
+				<div class="panel-body">
+					<fieldset>
+						<select name="date" class="form-control">
+							<option value="0" selected="selected">Any date</option>
+							<option value="1" >Today and...</option>
+							<option value="7" >This Week and...</option>
+							<option value="30" >1 Month Ago and...</option>
+							<option value="90" >3 Months Ago and...</option>
+							<option value="180" >6 Months Ago and...</option>
+							<option value="365" >1 Year Ago and...</option>
+						</select>
+
+						<div class="clearfix">&nbsp;</div>
+			
+						<label class="radio-inline">
+							<input type="radio" name="date_order" value="newer" checked="checked" />Newer
+						</label>
+		
+						<label class="radio-inline">
+							<input type="radio" name="date_order" value="older" />Older
+						</label>			
+					</fieldset>
+				</div>	
+			</div>
+		</div>
+		
+		<div class="col-md-6 col-sm-6">			
+		
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h5 class="panel-title">Sort Results by</h5>
+				</div>
+				<div class="panel-body">
+					<fieldset>
+						<select name="order_by" class="form-control" >
+							<option value="date" >Date</option>
+							<option value="title" >Title</option>
+							<option value="most_posts" >Most Posts</option>
+							<option value="recent_post" >Most Recent Post</option>
+						</select>
+
+						<div class="clearfix">&nbsp;</div>
+						<label class="radio-inline">
+							<input type="radio" name="sort_order" value="desc" checked="checked" /> Descending
+						</label>
+			
+						<label class="radio-inline">	
+							<input type="radio" name="sort_order" value="asc" /> Ascending
+						</label>
+					</fieldset>
+				</div>	
+			</div>
+			
+		</div>
+	</div>	
+	<div class="clearfix">&nbsp;</div>
+	<input type="submit" class="btn btn-primary" value="Search" />
+	
+	</div>
+</form>
+</div><!-- End page content -->

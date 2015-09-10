@@ -1,0 +1,32 @@
+{
+  "name": "Forum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.9.3",
+    "fs": "^0.0.2",
+    "express": "^4.13.3",
+    "mongoose": "^3.9.7",
+    "gulp-sass": "^2.0.4",
+    "gulp": "^3.9.0",
+    "path": "^0.11.14"
+  },
+  "devDependencies": {
+    "gulp-nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stnlong/Forum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stnlong/Forum/issues"
+  },
+  "homepage": "https://github.com/Stnlong/Forum"
+}

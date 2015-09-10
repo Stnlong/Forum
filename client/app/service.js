@@ -1,9 +1,9 @@
 appModule.factory('mainFactory', function($http) {
 	var subForumInfo = [
-					{topics: "9542", posts: "89997", lastPoster: 'Johnny Depp'},
-					{topics: "6532", posts: "1253431", lastPoster: 'Serena Williams'},
-					{topics: "9812", posts: "198762", lastPoster: 'Marvin Gaye'},
-					{topics: "9513", posts: "9983", lastPoster: 'Thomas Edison'}
+					{topics: "9542", posts: "89997", lastPoster: 'Johnny Depp', time: '1 Month Ago'},
+					{topics: "6532", posts: "1253431", lastPoster: 'Serena Williams', time: '1 Week Ago'},
+					{topics: "9813", posts: "198762", lastPoster: 'Marvin Gaye', time: 'Today'},
+					{topics: "9513", posts: "9983", lastPoster: 'Thomas Edison', time: 'Yesterday'}
 				];
 	var carStyleID = [];
 	var carPics = [];

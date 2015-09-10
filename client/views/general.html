@@ -1,78 +1,776 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Discussion board built with Twitter Bootstrap using just a few lines of CSS code.">
-
-  <title>snipplicious - preview</title>
-
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-  <style>
-    .forum.table > tbody > tr > td {
-    vertical-align: middle;
-}
-
-.forum .fa {
-    width: 1em;
-    text-align: center;
-}
-
-.forum.table th.cell-stat {
-    width: 6em;
-}
-
-.forum.table th.cell-stat-2x {
-    width: 14em;
-}
-
-  </style>
-
-</head>
-<body>
-<div class="container" style="margin-top: 35px">
-  <table class="table forum table-striped">
-    <thead>
-      <tr>
-        <th class="cell-stat"></th>
-        <th>
-          <h3>General Discussion</h3>
-        </th>
-        <th class="cell-stat text-center hidden-xs hidden-sm">General</th>
-        <th class="cell-stat text-center hidden-xs hidden-sm">Posts</th>
-        <th class="cell-stat-2x hidden-xs hidden-sm">Last Post</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="text-center"><i class="fa fa-question fa-2x text-primary"></i></td>
-        <td>
-          <h4><a href="#">General Discussion</a><br><small>Some description</small></h4>
-        </td>
-        <td class="text-center hidden-xs hidden-sm"><a href="#">9 542</a></td>
-        <td class="text-center hidden-xs hidden-sm"><a href="#">89 897</a></td>
-        <td class="hidden-xs hidden-sm">by <a href="#">John Doe</a><br><small><i class="fa fa-clock-o"></i> 3 months ago</small></td>
-      </tr>
-      <tr>
-        <td class="text-center"><i class="fa fa-exclamation fa-2x text-danger"></i></td>
-        <td>
-          <h4><a href="#">Technical Discussion</a><br><small>Category description</small></h4>
-        </td>
-        <td class="text-center hidden-xs hidden-sm"><a href="#">6532</a></td>
-        <td class="text-center hidden-xs hidden-sm"><a href="#">152123</a></td>
-        <td class="hidden-xs hidden-sm">by <a href="#">Jane Doe</a><br><small><i class="fa fa-clock-o"></i> 1 years ago</small></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<div class="container"> <!-- Start page content -->
+<div class="row">     
+      <div class="col-md-12">
+        <ul class="list-inline">
+          <li class="col-lg-10 col-md-10 col-sm-9 col-xs-12"><form method="post" action="http://www.eebootstrap.com/forum/do_search/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="board_id" value="1" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="07ea89281a0556673d548447a9cfdd135cf5e999" />
 </div>
 
-<input type="hidden" name="IL_IN_TAG" value="2">
-</body>
-<!-- Bootstrap jQuery -->
-<script src="assets/js/jquery.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="assets/js/bootstrap.min.js"></script>
-</html>
+  <div class="form group input-group">
+      <input type="text" class="form-control" placeholder="Search" name="keywords" required>
+      <span class="input-group-btn">
+      <button class="btn btn-primary" type="submit"><i class="fa fa-search fa-fw"></i></button>
+      </span>
+  </div>
+</form></li> 
+          <li class="col-lg-2 col-md-2 col-sm-3 hidden-xs"><a href="http://www.eebootstrap.com/forum/search/" class="btn btn-primary pull-right" role="button">Advanced Search</a></li>
+        </ul>
+      </div>      
+    </div>
+    
+    <div class="clearfix">&nbsp;</div>
+<div class="row">
+    <div class="col-md-12 hidden-xs">
+    <ol class="breadcrumb"><li><a href="http://www.eebootstrap.com/forum/" title="Forum Home">Forum Home</a></li><li><a href="http://www.eebootstrap.com/forum/viewcategory/1/" title="eeBootstrap">eeBootstrap</a></li><li class="active">Installation and Upgrade Support</li></ol>
+    </div>    
+  </div>
+
+<script type="text/javascript">
+<!--
+
+function showHideRow(el)
+{
+  if (document.getElementById(el).style.display == "")
+  {
+    document.getElementById(el).style.display = "none";
+  }
+  else
+  {
+    document.getElementById(el).style.display = "";
+  }
+}
+//-->
+</script>
+
+<div class="row">
+  <div class="col-md-12 center-block">
+    <div class="row">
+  <div class="col-md-12">
+    <p class="text-muted">Announcements</p>
+  </div>
+  <div class="col-md-12">
+    <div class="row">
+  <div class="col-md-12"> 
+    <div class="alert alert-info topic-marker">     
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_announcements.gif" width="15" height="15" alt="eeBootstrap theme 1.0.4 Released. " title="eeBootstrap theme 1.0.4 Released. " />
+      <a href="http://www.eebootstrap.com/forum/viewannounce/70_9/" title="eeBootstrap theme 1.0.4 Released. "> eeBootstrap theme 1.0.4 Released. </a>    
+      <small class="text-muted">&nbsp;&nbsp;Posted: 04-05-2015 10:10&nbsp;&nbsp;by&nbsp;eeBootstrap Support Team</small>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <a href="http://www.eebootstrap.com/forum/newtopic/9/" title="New Topic"><button type="button" class="btn btn-primary pull-right"><i class="fa fa-pencil"></i> New Topic</button></a> 
+  </div>
+</div>
+<div class="clearfix">&nbsp;</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">Installation and Upgrade Support</div>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="hidden-xs"></th>
+            <th>Topic Title</th>
+            <th class="text-right">Replies</th>
+            <th class="text-right">Views</th>
+            <th class="hidden-xs">Latest Post Info</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+
+<tr id="a1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/39/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_sticky_topic.gif" width="15" height="15" alt="[How to] Display an image based on forum ID in forums index page." title="[How to] Display an image based on forum ID in forums index page." />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      <span class='forumLightLinks'>Sticky:&nbsp;</span>
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/39/" title="[How to] Display an image based on forum ID in forums index page."><span class="PostPrefixTitle">[How to] Display an image based on forum ID in forums index page.</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">0</span></td>
+  <td class="col-md-1 text-right"><span class="badge">544</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      Posted: 10-11-2014 08:48<br />
+      
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="b1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/19/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_sticky_topic.gif" width="15" height="15" alt="Upgrade eeBootstrap Theme" title="Upgrade eeBootstrap Theme" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      <span class='forumLightLinks'>Sticky:&nbsp;</span>
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/19/" title="Upgrade eeBootstrap Theme"><span class="PostPrefixTitle">Upgrade eeBootstrap Theme</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">0</span></td>
+  <td class="col-md-1 text-right"><span class="badge">323</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      Posted: 05-11-2014 14:58<br />
+      
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="c1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/8/">   
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_sticky_topic.gif" width="15" height="15" alt="Install eeBootstrap Theme" title="Install eeBootstrap Theme" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      <span class='forumLightLinks'>Sticky:&nbsp;</span>
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/8/" title="Install eeBootstrap Theme"><span class="PostPrefixTitle">Install eeBootstrap Theme</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">0</span></td>
+  <td class="col-md-1 text-right"><span class="badge">1128</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      Posted: 02-11-2014 16:01<br />
+      
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="d1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/63/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Question about prefix" title="Question about prefix" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/63/" title="Question about prefix"><span class="PostPrefixTitle">Question about prefix</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">4</span></td>
+  <td class="col-md-1 text-right"><span class="badge">696</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/109/">Posted: 18-11-2014 17:53</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="e1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/62/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="[How to] Formatting as &#8220;expanded&#8221; by default." title="[How to] Formatting as &#8220;expanded&#8221; by default." />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/62/" title="[How to] Formatting as &#8220;expanded&#8221; by default."><span class="PostPrefixTitle">[How to] Formatting as &#8220;expanded&#8221; by default.</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">1</span></td>
+  <td class="col-md-1 text-right"><span class="badge">461</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/103/">Posted: 18-11-2014 12:21</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="f1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/61/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Get &#8220;social&#8221; &#63;" title="Get &#8220;social&#8221; &#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/61/" title="Get &#8220;social&#8221; &#63;"><span class="PostPrefixTitle">Get &#8220;social&#8221; &#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">2</span></td>
+  <td class="col-md-1 text-right"><span class="badge">604</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/97/">Posted: 18-11-2014 09:30</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="g1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/59/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Some ideas and such!" title="Some ideas and such!" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/59/" title="Some ideas and such!"><span class="PostPrefixTitle">Some ideas and such!</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">3</span></td>
+  <td class="col-md-1 text-right"><span class="badge">858</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/91/">Posted: 15-11-2014 11:02</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="h1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/57/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="[Fixed] Help with SoundCloud please" title="[Fixed] Help with SoundCloud please" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/57/" title="[Fixed] Help with SoundCloud please"><span class="PostPrefixTitle">[Fixed] Help with SoundCloud please</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">2</span></td>
+  <td class="col-md-1 text-right"><span class="badge">405</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/87/">Posted: 12-11-2014 20:45</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="i1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/55/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="SoundCloud bbcode: possible to put playlist&#63;" title="SoundCloud bbcode: possible to put playlist&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/55/" title="SoundCloud bbcode: possible to put playlist&#63;"><span class="PostPrefixTitle">SoundCloud bbcode: possible to put playlist&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">2</span></td>
+  <td class="col-md-1 text-right"><span class="badge">387</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/85/">Posted: 12-11-2014 09:23</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="j1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/52/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Login Validation" title="Login Validation" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/52/" title="Login Validation"><span class="PostPrefixTitle">Login Validation</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/13/">Martijn Broeders 1</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">4</span></td>
+  <td class="col-md-1 text-right"><span class="badge">591</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/83/">Posted: 11-11-2014 15:59</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/13/">Martijn Broeders 1</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="k1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/50/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="about videos" title="about videos" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/50/" title="about videos"><span class="PostPrefixTitle">about videos</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">2</span></td>
+  <td class="col-md-1 text-right"><span class="badge">559</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/73/">Posted: 11-11-2014 12:56</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="l1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/45/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Have you tested this if running thru regular templates&#63;" title="Have you tested this if running thru regular templates&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/45/" title="Have you tested this if running thru regular templates&#63;"><span class="PostPrefixTitle">Have you tested this if running thru regular templates&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">2</span></td>
+  <td class="col-md-1 text-right"><span class="badge">372</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/70/">Posted: 11-11-2014 09:25</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="m1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/44/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Private message status CSS class, where it is located&#63;" title="Private message status CSS class, where it is located&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/44/" title="Private message status CSS class, where it is located&#63;"><span class="PostPrefixTitle">Private message status CSS class, where it is located&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">0</span></td>
+  <td class="col-md-1 text-right"><span class="badge">263</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      Posted: 11-11-2014 08:34<br />
+      
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="n1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/43/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Toogle navigation&#63;" title="Toogle navigation&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/43/" title="Toogle navigation&#63;"><span class="PostPrefixTitle">Toogle navigation&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">2</span></td>
+  <td class="col-md-1 text-right"><span class="badge">296</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/66/">Posted: 11-11-2014 08:18</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="o1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/35/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="What is the purpose for marker_old_topic.gif&#63;" title="What is the purpose for marker_old_topic.gif&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/35/" title="What is the purpose for marker_old_topic.gif&#63;"><span class="PostPrefixTitle">What is the purpose for marker_old_topic.gif&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">1</span></td>
+  <td class="col-md-1 text-right"><span class="badge">455</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/54/">Posted: 07-11-2014 21:56</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="p1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/30/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_closed_topic.gif" width="15" height="15" alt="language folder insided js-folder&#63;" title="language folder insided js-folder&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      <span class='forumLightLinks'>Closed:&nbsp;</span>
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/30/" title="language folder insided js-folder&#63;"><span class="PostPrefixTitle">language folder insided js-folder&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">3</span></td>
+  <td class="col-md-1 text-right"><span class="badge">590</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/51/">Posted: 06-11-2014 22:16</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="q1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/31/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Replacing speech bubbles with icons&#63;" title="Replacing speech bubbles with icons&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/31/" title="Replacing speech bubbles with icons&#63;"><span class="PostPrefixTitle">Replacing speech bubbles with icons&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">1</span></td>
+  <td class="col-md-1 text-right"><span class="badge">358</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/48/">Posted: 06-11-2014 21:52</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/1/">eeBootstrap Support Team</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="r1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/27/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Is there one css-handler for links within forums&#63;" title="Is there one css-handler for links within forums&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/27/" title="Is there one css-handler for links within forums&#63;"><span class="PostPrefixTitle">Is there one css-handler for links within forums&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">1</span></td>
+  <td class="col-md-1 text-right"><span class="badge">387</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/38/">Posted: 06-11-2014 15:38</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="s1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/14/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="Bought it, where is the styling&#63;" title="Bought it, where is the styling&#63;" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/14/" title="Bought it, where is the styling&#63;"><span class="PostPrefixTitle">Bought it, where is the styling&#63;</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">4</span></td>
+  <td class="col-md-1 text-right"><span class="badge">1163</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/24/">Posted: 05-11-2014 10:31</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/10/">Petri Kosunen</a></small>
+    </div>
+  </td>
+</tr>
+
+<tr id="t1"  class="">
+  <td class="hidden-xs topic-marker">
+    <a href="http://www.eebootstrap.com/forum/viewthread/10/">    
+      <img src="http://www.eebootstrap.com/themes/forum_themes/eebootstrap/images/marker_old_topic.gif" width="15" height="15" alt="i ve just bought it" title="i ve just bought it" />
+    </a>
+  </td>
+  <td class="col-md-6">
+    <div>
+      
+      <span class="PostPrefix">
+        <span class="PostPrefixView"></span>
+        <a href="http://www.eebootstrap.com/forum/viewthread/10/" title="i ve just bought it"><span class="PostPrefixTitle">i ve just bought it</span></a>
+      </span>
+      
+      
+    </div>
+    <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/8/">Stéphane Cabaret</a></small>
+  </td>
+  <td class="col-md-1 text-right"><span class="badge">2</span></td>
+  <td class="col-md-1 text-right"><span class="badge">368</span></td>
+  <td class="col-md-4 hidden-xs">
+    <div>
+      
+      <a href="http://www.eebootstrap.com/forum/viewreply/19/">Posted: 04-11-2014 14:37</a><br />
+      <small class="text-muted">Author: <a href="http://www.eebootstrap.com/forum/member/8/">Stéphane Cabaret</a></small>
+    </div>
+  </td>
+</tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+  <form method="post" action="http://www.eebootstrap.com/forum/do_search/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="board_id" value="1" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="07ea89281a0556673d548447a9cfdd135cf5e999" />
+</div>
+
+
+  <div class="input-group">
+      <input type="hidden" name="forum_id" value="9" />
+      <input type="text" class="form-control" placeholder="Search this forum" name="keywords" required>
+      <span class="input-group-btn">
+      <button class="btn btn-primary" type="submit"><i class="fa fa-search fa-fw"></i></button>
+      </span>
+  </div>
+</form>
+  </div>
+  
+  
+  <div class="visible-xs visible-sm clearfix">&nbsp;</div>
+  
+  <div class="col-md-8">
+    <a href="http://www.eebootstrap.com/forum/newtopic/9/" title="New Topic"><button type="button" class="btn btn-primary pull-right"><i class="fa fa-pencil"></i> New Topic</button></a> 
+  </div>
+  
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    
+  </div>
+</div>
+<div class="clearfix">&nbsp;</div>
+<div class="panel-group" id="accordion_topic_legend">
+  <div class="panel panel-default">
+     <a class="panel-default" data-toggle="collapse" data-parent="#accordion_topic_legend" href="#topic_legend">
+      <div class="panel-heading">
+        <i class="fa fa-sitemap"></i> Post Marker Legend <span class="pull-right"><i class="fa fa-compress"></i></span>
+      </div>
+    </a>
+    <div id="topic_legend" class="panel-collapse collapse in">
+      <div class="panel-body">
+  
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6">            
+            <i class="fa fa-comments-o fa-lg"></i> New posts
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6">  
+            <i class="fa fa-fire fa-lg"></i> Hot Topic with new posts
+          </div>
+          <div class="col-md-3 col-sm-2 col-xs-6">  
+            <i class="fa fa-bar-chart fa-rotate-90"></i> New Poll
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">  
+            <i class="fa fa-sign-out fa-lg"></i> Moved Topic
+          </div>
+        </div>    
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6">  
+            <i class="fa fa-comments fa-lg"></i> Old Topic
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6">  
+            <i class="fa fa-fire-extinguisher fa-lg"></i> Hot Topic with no new posts
+          </div>
+      
+          <div class="col-md-3 col-sm-2 col-xs-6">  
+            <i class="fa fa-bar-chart-o fa-rotate-90"></i> Old Poll
+          </div>
+        
+          <div class="col-md-3 col-sm-3 col-xs-6">  
+          
+            <i class="fa fa-thumb-tack fa-lg"></i> Sticky topic
+          </div>      
+        </div>        
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6">  
+            <i class="fa fa-lock fa-lg"></i> Closed Topic
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6">  
+            <i class="fa fa-bullhorn fa-lg"></i> Announcements
+          </div>        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- End page content -->
