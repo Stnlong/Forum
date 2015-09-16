@@ -11,4 +11,8 @@ appModule.config(function ($routeProvider) {
 		.when('/search', {
 			templateUrl: './views/search.html'
 		})
+		.when('/newTopic', {
+			templateUrl: './views/newTopic.html',
+			controller: 'PostController'
+		})
 })

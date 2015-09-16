@@ -13,6 +13,7 @@
     "path": "^0.11.14"
   },
   "devDependencies": {
+    "gulp-jscs": "^2.0.0",
     "gulp-nodemon": "^2.0.4"
   },
   "scripts": {
