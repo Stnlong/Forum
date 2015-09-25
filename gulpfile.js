@@ -44,5 +44,9 @@ gulp.task('nodemon', function(cb) {
 			cb();
 			started = true;
 		}
-	});
+	})
+	.on('error', function(err) {
+	     // Make sure failure causes gulp to exit
+	     throw err;
+	 });
 });

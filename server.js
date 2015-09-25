@@ -1,11 +1,11 @@
-var path = require('path');
+#!/usr/bin/env node
 
-var express = require('express');
+var debug = require('debug')('passport-mongo'),
+    app = require('./app');
 
-var app = express();
 
-app.use(express.static(path.join(__dirname, './client')));
+app.set('port', process.env.PORT || 8000);
 
-app.listen(8000, function() {
-	console.log("listening on 8000");
-})
+var server = app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + server.address().port);
+});
